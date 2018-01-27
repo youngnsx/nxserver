@@ -1,0 +1,20 @@
+version: "2"
+
+networks:
+ nx-net:
+    driver: bridge
+
+services:
+  nx:
+    container_name: nx
+    image: ubuntu:16:04
+    environment:
+      TZ: Asia/Taipei
+    restart: always
+    # volumes:
+    #   - /etc/localtime:/etc/localtime:ro
+    networks:
+      -nx-net
+    ports:
+      - "80:80"
+      - "443:443"
