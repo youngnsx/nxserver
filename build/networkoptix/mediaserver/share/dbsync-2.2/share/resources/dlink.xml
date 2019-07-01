@@ -1,0 +1,322 @@
+﻿<resources>
+    <oem name = "Dlink">
+
+    <resource name = "DLINK_COMMON">
+        <params>
+            <param name = "supportedMotion"
+             type = "Value"
+             default_value = "SoftwareGrid, MotionWindow"/>
+
+            <param name = "motionWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+        <param name = "motionMaskWindowCnt"
+             type = "Value"
+             default_value = "1000000"/>
+		<param name = "motionSensWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+
+        <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "1"/>
+
+        <param name = "streamFpsSharing"
+         type = "Value"
+         default_value = "sharePixels"/>
+
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+
+        </params>
+    </resource>
+
+    <resource name = "DCS-1100(L)" public="DLINK_COMMON">
+       <params>
+        <param name = "MaxFPS"
+               type = "Value"
+               default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-1130(L)" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-2102" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="10"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-2103" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+        
+    <resource name = "DCS-2121" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="10"/>
+        </params>
+    </resource>
+        
+    <resource name = "DCS-2130" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+        
+    <resource name = "DCS-2210" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+        </params>
+    </resource>
+
+      <resource name = "DCS-7413" public="DLINK_COMMON">
+        <params>
+          <param name = "MaxFPS"
+                 type = "Value"
+                 default_value ="15"/>
+        </params>
+        <param name = "rtpTransport"
+               type = "Value"
+               default_value ="UDP"/>
+
+      </resource>
+
+    <resource name = "DCS-2230" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3112" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3410" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3411" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3430" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3710" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+     </resource>
+
+    <resource name = "DCS-3710B1" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-3715" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+
+    <resource name = "DCS-3716" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+        </params>
+    </resource>
+
+
+    <resource name = "DCS-5230L" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="10"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-5605" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+            <param name = "rtpTransport"
+                   type = "Value"
+                   default_value ="UDP"/>
+        </params>
+    </resource>
+
+
+    <resource name = "DCS-5635" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6112" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6113" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6410" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6510" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6511" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-6616" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-681xB1" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-7110" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-7410" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-7510" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DVS-310-1" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DVS-V310-4" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-940L" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="20"/>
+        </params>
+    </resource>
+
+    <resource name = "DCS-942L" public="DLINK_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+</oem>
+</resources>
+
+
+

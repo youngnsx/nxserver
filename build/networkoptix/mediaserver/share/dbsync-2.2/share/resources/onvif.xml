@@ -1,0 +1,202 @@
+﻿<resources>
+<oem name = "OnvifDevice">
+    <resource name = "ONVIF">
+        <params>
+            <param name = "supportedMotion"
+                   type = "Value"
+                   default_value = "SoftwareGrid"/>
+
+            <param name = "motionWindowCnt"
+                   type = "Value"
+                   default_value = "1000000"/>
+
+            <param name = "motionMaskWindowCnt"
+                   type = "Value"
+                   default_value = "1000000"/>
+
+            <param name = "motionEditURL"
+                   type = "Value"
+                   default_value = ""/>
+
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="60"/>
+
+            <param name = "MediaUrl"
+                   type = "Value"
+                   default_value =""/>
+
+            <param name = "DeviceUrl"
+                   type = "Value"
+                   default_value =""/>
+
+            <param name = "hasDualStreaming"
+               type = "Value"
+             default_value = "1"/>
+
+            <param name = "streamFpsSharing"
+            type = "Value"
+            default_value = "sharePixels"/>
+
+
+            <param name = "cameraCapabilities"
+               type = "Value"
+             default_value = "0"/>
+
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+
+            <param name = "isAudioSupported"
+                   type = "Value"
+                   default_value = "0"/>
+			<param name = "forcedIsAudioSupported"
+                   type = "Value"
+                   default_value = "0"/>
+				   
+            <param name = "xVelocityCoeff" type = "Value" default_value = "1.0"/>
+            <param name = "yVelocityCoeff" type = "Value" default_value = "1.0"/>
+            <param name = "zoomVelocityCoeff" type = "Value" default_value = "1.0"/>
+				   
+
+            <!-- Optional onvif parameters-->
+            <param name = "cameraSettingsId" type = "Value" default_value = "ONVIF"/>
+            <param name = "%%Imaging" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Yb Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Iris" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Exposure Time" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Wide Dynamic Range" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Wide Dynamic Range%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Max Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Min Exposure Time" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Backlight Compensation" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Backlight Compensation%%Level" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Contrast" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Priority" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Sharpness" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Ir Cut Filter Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Yr Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Min Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Wide Dynamic Range%%Level" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Max Iris" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Brightness" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Min Iris" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Backlight Compensation%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Color Saturation" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Max Exposure Time" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%System Reboot" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Soft System Factory Default" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Hard System Factory Default" type = "Value" default_value = ""/>
+        </params>
+    </resource>
+
+    <resource name = "Digital Watchdog" public = "ONVIF">
+        <params>
+            <param name = "reservedSecondStreamFps"
+               type = "Value"
+             default_value = "0"/>
+
+            <!-- Optional Digital Watchdog parameters-->
+            <param name = "cameraSettingsId" type = "Value" default_value = "DIGITALWATCHDOG"/>
+            <param name = "%%Imaging" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Kelvin" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Red" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%White Balance%%Blue" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Brightness" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Shutter Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Shutter Speed" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%Digital Slow Shutter" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%AGC Gain" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%BLC Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Exposure%%WDR/BLC Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Day &amp; Night" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Day &amp; Night%%Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Day &amp; Night%%Switching from Color to B/W" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Day &amp; Night%%Switching from B/W to Color" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Lens Mode" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Chroma" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Sharpness" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Mirror" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Flip" type = "Value" default_value = ""/>
+            <param name = "%%Imaging%%Extra Setting%%Digital Noise Reduction" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%Server Address" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%Port" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%User ID" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%Password" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%Directory" type = "Value" default_value = ""/>
+            <param name = "%%Maintenance%%Firmware Upgrade%%Check Upgrade" type = "Value" default_value = ""/>
+            <param name = "%%Lens" type = "Value" default_value = ""/>
+            <param name = "%%Lens%%Zoom" type = "Value" default_value = ""/>
+            <param name = "%%Lens%%Focus" type = "Value" default_value = ""/>
+
+        </params>
+    </resource>
+
+    <resource name = "Sony" public = "ONVIF">
+        <params>
+            <param name = "reservedSecondStreamFps"
+               type = "Value"
+             default_value = "1"/>
+        </params>
+    </resource>
+
+    <resource name = "VISTA" public = "ONVIF">
+            <param name = "streamFpsSharing"
+            type = "Value"
+            default_value = "noSharing"/>
+    </resource>
+    <resource name = "Vista" public = "ONVIF">
+            <param name = "streamFpsSharing"
+            type = "Value"
+            default_value = "noSharing"/>
+    </resource>
+
+    <resource name = "SEYEON TECH CO., LTD" public = "ONVIF">
+             <param name = "analog"
+               type = "Value"
+             default_value = "1"/>
+    </resource>
+
+    <resource name = "Network Video System" public = "ONVIF">
+             <param name = "analog"
+               type = "Value"
+             default_value = "1"/>
+    </resource>
+	
+    <resource name = "Brickcom" public = "ONVIF">
+        <params>
+            <param name = "reservedSecondStreamFps"
+               type = "Value"
+             default_value = "1"/>
+        </params>
+    </resource>
+
+    <resource name = "ONVIF_ANALOG" public = "ONVIF">
+        <params>
+            <param name = "analog"
+               type = "Value"
+            default_value = "1"/>
+        </params>
+    </resource>
+
+
+</oem>
+    
+
+    
+
+
+</resources>

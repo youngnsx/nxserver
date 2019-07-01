@@ -1,0 +1,49 @@
+﻿<resources>
+    <oem name = "ISD">
+    <resource name = "ISDcam">
+        <params>
+            
+        <param name = "MaxFPS"
+               type = "Value"
+               default_value ="32"/>
+
+        <param name = "supportedMotion"
+         type = "Value"
+         default_value = "SoftwareGrid"/>
+
+        
+        <param name = "isAudioSupported"
+           type = "Value"
+         default_value = "1"/>
+
+        <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "1"/>
+
+        <param name = "streamFpsSharing"
+         type = "Value"
+         default_value = "noSharing"/>
+
+            <param name = "reservedSecondStreamFps"
+           type = "Value"
+         default_value = "0"/>
+
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+
+        </params>
+
+    </resource>
+	
+    <resource name = "Jaguar" public = "ISDcam"/>
+    <resource name = "JMS-CS-1080P" public = "ISDcam"/>
+    <resource name = "XMS-CS-4K" public = "ISDcam"/>
+    <resource name = "JBS-AF-1080P" public = "ISDcam"/>
+
+</oem>
+</resources>
+
+
+

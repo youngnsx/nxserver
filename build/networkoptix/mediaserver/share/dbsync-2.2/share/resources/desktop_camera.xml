@@ -1,0 +1,40 @@
+﻿<resources>
+
+<oem name = "VIRTUAL_CAMERA">
+
+    <resource name = "SERVER_DESKTOP_CAMERA">
+        <params>
+
+            
+             <param name = "cameraCapabilities"
+               type = "Value"
+             default_value = "0"/>
+
+			<param name = "ptzCapabilities"
+						   type = "Value"
+						   default_value = "0"/>
+
+            <param name = "hasDualStreaming"
+               type = "Value"
+             default_value = "0"/>
+
+            <param name = "isAudioSupported"
+                   type = "Value"
+                   default_value = "1"/>
+
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+
+			<param name = "noRecordingParams"
+					type = "Value"
+					default_value = "1"/>
+
+				   
+             
+        </params>
+    </resource>
+
+
+</oem>
+</resources>

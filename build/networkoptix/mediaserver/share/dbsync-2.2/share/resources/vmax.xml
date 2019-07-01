@@ -1,0 +1,54 @@
+﻿<resources>
+
+<oem name = "VMAX">
+
+    <resource name = "VMAX_COMMON">
+        <params>
+            <param name = "supportedMotion"
+             type = "Value"
+             default_value = "SoftwareGrid"/>
+
+            <param name = "isAudioSupported"
+             type = "Value"
+             default_value = "1"/>
+
+            <param name = "streamFpsSharing"
+             type = "Value"
+             default_value = "sharePixels"/>
+
+
+            <param name = "channelsAmount"
+               type = "Value"
+             default_value = "1"/>
+
+             <param name = "dts"
+               type = "Value"
+             default_value = "1"/>
+
+             <param name = "analog"
+               type = "Value"
+             default_value = "1"/>
+
+
+             <param name = "groupplay"
+               type = "Value"
+             default_value = "1"/>
+             
+        </params>
+    </resource>
+
+    <resource name = "DW-VF4" public = "VMAX_COMMON">
+        <params>
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="30"/>
+        </params>
+    </resource>
+
+    <resource name = "DW-VF8" public = "DW-VF4"/>
+    <resource name = "DW-VF16" public = "DW-VF8"/>
+
+
+</oem>
+    
+</resources>

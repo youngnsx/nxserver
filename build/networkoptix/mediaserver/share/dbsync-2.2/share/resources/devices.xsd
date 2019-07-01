@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="resources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="oem"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="oem">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="resource"/>
+        </xs:sequence>
+        <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+      </xs:complexType>
+    </xs:element>
+  <xs:element name="resource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="params"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="public"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="params">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="param"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="param">
+    <xs:complexType>
+      <xs:attribute name="default_value" type="xs:NMTOKEN"/>
+      <xs:attribute name="description"/>
+      <xs:attribute name="group"/>
+      <xs:attribute name="netHelper"/>
+      <xs:attribute name="max" type="xs:integer"/>
+      <xs:attribute name="min" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="readonly" type="xs:boolean"/>
+      <xs:attribute name="step" type="xs:integer"/>
+      <xs:attribute name="sub_group"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="ui" type="xs:integer"/>
+      <xs:attribute name="ui_values"/>
+      <xs:attribute name="value" type="xs:integer"/>
+      <xs:attribute name="values"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

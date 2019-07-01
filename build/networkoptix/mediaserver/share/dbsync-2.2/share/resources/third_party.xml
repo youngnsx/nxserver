@@ -1,0 +1,64 @@
+﻿<resources>
+
+<oem name = "THIRD_PARTY">
+
+    <resource name = "THIRD_PARTY_COMMON">
+        <params>
+            <param name = "supportedMotion"
+             type = "Value"
+             default_value = "SoftwareGrid, MotionWindow"/>
+
+            <param name = "motionWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+
+            <param name = "motionMaskWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+
+            <param name = "motionSensWindowCnt"
+             type = "Value"
+             default_value = "1"/>           
+
+            <param name = "isAudioSupported"
+             type = "Value"
+             default_value = "1"/>
+
+            <param name = "hasDualStreaming"
+               type = "Value"
+             default_value = "1"/>
+
+            <param name = "streamFpsSharing"
+             type = "Value"
+             default_value = "sharePixels"/>
+
+            <param name = "channelsAmount"
+               type = "Value"
+             default_value = "1"/>
+
+             <param name = "dts"
+               type = "Value"
+             default_value = "0"/>
+
+             <param name = "cameraCapabilities"
+               type = "Value"
+             default_value = "0"/>
+
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="8"/>
+
+            <param name = "analog"
+               type = "Value"
+               default_value = "0"/>
+             
+        </params>
+    </resource>
+
+</oem>
+
+</resources>

@@ -1,0 +1,606 @@
+﻿<resources>
+
+    <oem name = "IqEye">
+
+        <resource name = "IQINVISION_COMMON">
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "off"/>
+            </params>
+            
+            <param name = "hasDualStreaming"
+               type = "Value"
+             default_value = "0"/>
+
+            <param name = "streamFpsSharing"
+             type = "Value"
+             default_value = "sharePixels"/>
+
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+        </resource>
+
+        <resource name = "IQ761N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ762N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ763N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="16"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ765N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="10"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ832N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ851N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQeye851" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ852N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="20"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQeye852" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="20"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ853N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="12"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQeye853" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="12"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+		
+        <resource name = "IQ855N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="10"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQeye855" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="10"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+				
+        <resource name = "IQ861N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ862N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ863N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="16"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQ865N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="10"/>
+            </params>
+
+            <params>
+                <param name = "hasMotionDetectionMap"
+                 type = "OnOff"
+                 values ="on, off"
+                 default_value = "on"/>
+            </params>
+
+        </resource>
+
+        <resource name = "IQA30N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA31N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA32N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA33N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="16"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA35N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="10"/>
+            </params>
+        </resource>
+		
+        <resource name = "IQM30N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+        </resource>
+
+        <resource name = "IQM31N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQM32N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+		
+        <resource name = "IQD30S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD31S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD32S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ030S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="60"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ031S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ032S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA10N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+		
+        <resource name = "IQA10S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA11N" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="15"/>
+            </params>
+        </resource>
+
+        <resource name = "IQA11S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="15"/>
+            </params>
+        </resource>
+		
+        <resource name = "IQD40S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD40SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD41S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="18"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD41SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="18"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD42S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="17"/>
+            </params>
+        </resource>
+
+        <resource name = "IQD42SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="17"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ040S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ040SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ041S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="18"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ041SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="18"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ042S" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="17"/>
+            </params>
+        </resource>
+
+        <resource name = "IQ042SI" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="17"/>
+            </params>
+        </resource>	
+
+        <resource name = "IQeye711" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye751" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye702" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="20"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye752" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="20"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye703" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye753" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye705" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+
+        <resource name = "IQeye755" public = "IQINVISION_COMMON">
+            <params>
+                <param name = "MaxFPS"
+                       type = "Value"
+                       default_value ="30"/>
+            </params>
+        </resource>
+		
+		
+    </oem>
+</resources>
+

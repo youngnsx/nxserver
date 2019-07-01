@@ -1,0 +1,38 @@
+﻿<resources>
+    <oem name = "NetworkOptix">
+    <resource name = "TestCameraLive">
+        <params>
+
+        <param name = "MaxFPS"
+               type = "Value"
+               default_value ="30"/>
+
+	<param name = "supportedMotion"
+             type = "Value"
+             default_value = "SoftwareGrid"/>
+
+        </params>
+        <param name = "isAudioSupported"
+           type = "Value"
+         default_value = "1"/>
+
+        <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "1"/>
+
+        <param name = "streamFpsSharing"
+         type = "Value"
+         default_value = "noSharing"/>
+        <param name = "ptzCapabilities"
+          type = "Value"
+        default_value = "0"/>
+
+
+
+    </resource>
+
+</oem>
+</resources>
+
+
+

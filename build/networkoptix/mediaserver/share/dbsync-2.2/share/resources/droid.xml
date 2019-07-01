@@ -1,0 +1,27 @@
+﻿<resources>
+    <oem name = "NetworkOptixDroid">
+    <resource name = "DroidLive">
+        <params>
+            
+        <param name = "MaxFPS"
+               type = "Value"
+               default_value ="30"/>
+            
+        <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "0"/>
+
+        <param name = "streamFpsSharing"
+         type = "Value"
+         default_value = "sharePixels"/>
+
+
+
+        </params>
+    </resource>
+
+    </oem>
+</resources>
+
+
+

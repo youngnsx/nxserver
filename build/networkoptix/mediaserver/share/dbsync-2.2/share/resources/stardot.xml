@@ -1,0 +1,51 @@
+﻿<resources>
+
+<oem name = "Stardot">
+
+    <resource name = "STARDOT_COMMON">
+        <params>
+            <param name = "supportedMotion"
+             type = "Value"
+             default_value = "HardwareGrid"/>
+
+        <param name = "motionWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+        <param name = "motionMaskWindowCnt"
+             type = "Value"
+             default_value = "1000000"/>
+        <param name = "motionSensWindowCnt"
+             type = "Value"
+             default_value = "1"/>           
+
+
+            <param name = "channelsAmount"
+               type = "Value"
+             default_value = "1"/>
+
+             <param name = "cameraCapabilities"
+               type = "Value"
+             default_value = "0"/>
+            <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+
+
+            <param name = "hasDualStreaming"
+               type = "Value"
+             default_value = "0"/>
+
+            <param name = "isAudioSupported"
+                   type = "Value"
+                   default_value = "0"/>
+
+            <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="15"/>
+
+        </params>
+    </resource>
+
+
+</oem>
+</resources>

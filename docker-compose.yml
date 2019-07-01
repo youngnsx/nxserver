@@ -1,20 +1,24 @@
-version: "2"
+version: '2.4'
 
 networks:
- nx-net:
+  nx: 
     driver: bridge
 
 services:
   nx:
+    build: ./build
     container_name: nx
-    image: ubuntu:16:04
-    environment:
-      TZ: Asia/Taipei
     restart: always
-    # volumes:
-    #   - /etc/localtime:/etc/localtime:ro
-    networks:
-      -nx-net
+    environment:
+      - TZ=Asia/Taipei
+    volumes:
+      - ./apps/nx/var:/opt/networkoptix/mediaserver/var
+      - ./apps/nx/etc:/opt/networkoptix/mediaserver/etc      
+      # - ./config:/config
+      # - "./recordings:/etc/hosts/HD Witness Media"
+    expose:
+      - 7001
     ports:
-      - "80:80"
-      - "443:443"
+      - 7001:7001
+    networks:
+      - nx

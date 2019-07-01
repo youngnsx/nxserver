@@ -1,0 +1,1338 @@
+﻿<resources>
+
+    <oem name = "ArecontVision">
+
+        <resource name = "ArecontVision_H264">
+            <params>
+                <param name = "Codec"
+               group = "Image quality"
+               subGroup="Quality"
+               type = "Enumeration"
+               values ="H.264, JPEG"
+               uiValues ="H.264, JPEG"
+               default_value = "H.264"
+               ui = "true"/>
+
+                <param name = "Bitrate"
+                 group = "Image quality"
+                 subGroup="Quality"
+                 type = "MinMaxStep"
+                 min = "0"
+                 max = "50000"
+                 step = "1"
+                 default_value = "0"
+                 ui = "true"/>
+
+            </params>
+        </resource>
+
+
+
+        <resource name = "ArecontVision_DN">
+            <params>
+
+                <param name = "Day/Night Mode"
+             group = "Day/Night"
+             description = "Automatic - enables the camera to automatically switch from daylight
+to nighttime conditions and vice versa based on the Threshold
+settings.
+                    
+Day - forces day mode and disables night mode.
+                    
+Night - forces night mode and disables day mode."
+             type = "Enumeration"
+             values ="auto, day, night"
+             uiValues ="Auto, Day, Night"
+             default_value = "auto"
+             netHelper = "daynight"
+             ui = "true"/>
+
+
+            </params>
+
+        </resource>
+
+
+
+
+        <resource name = "ArecontVision_AI">
+            <params>
+                <param name = "AutoIris enable"
+             group = "AutoIris"
+             description = "Allows to enable and disable auto-iris."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "off"
+             netHelper = "auto-iris"
+             ui = "true"/>
+
+
+            </params>
+        </resource>
+
+
+
+        <resource name = "ArecontVision_Abstract">
+            <params>
+
+                <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "1"/>
+
+
+                <param name = "supportedMotion"
+        type = "Value"
+        default_value = "HardwareGrid"/>
+		
+           <param name = "ptzCapabilities"
+              type = "Value"
+            default_value = "0"/>
+		
+
+                <param name = "motionWindowCnt"
+             type = "Value"
+             default_value = "1"/>
+                <param name = "motionMaskWindowCnt"
+             type = "Value"
+             default_value = "1000000"/>
+                <param name = "motionSensWindowCnt"
+             type = "Value"
+             default_value = "1"/>           
+
+
+                <param name="VideoLayout"
+             type="Value"
+             default_value="width=1;height=1;sensors=0"/>
+
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="1280"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1024"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="32"/>
+
+                <param name = "expwndleft"
+             type = "Value"
+             netHelper ="expwndleft"/>
+
+                <param name = "expwndtop"
+             type = "Value"
+             netHelper ="expwndtop"/>
+
+                <param name = "expwndwidth"
+             type = "Value"
+             netHelper ="expwndwidth"/>
+
+                <param name = "expwndheight"
+             type = "Value"
+             netHelper ="expwndheight"/>
+
+                <param name = "sensorleft"
+             type = "Value"
+             netHelper ="sensorleft"/>
+
+                <param name = "sensortop"
+             type = "Value"
+             netHelper ="sensortop"/>
+
+                <param name = "sensorwidth"
+             type = "Value"
+             netHelper ="sensorwidth"/>
+
+                <param name = "sensorheight"
+             type = "Value"
+             netHelper ="sensorheight"/>
+
+
+                <param name = "MACAddress"
+             group ="Administration/Info"
+                     description = "Camera mac address."
+             type = "Value"
+             netHelper = "mac"
+             readonly ="true"
+             ui = "true"/>
+
+
+                <param name = "Factory defaults"
+             group ="Administration/Info"
+                     description = "Restores camera parameters to factory defaults."
+             type = "Button"
+             netHelper = "params=factory"
+             ui = "true"/>
+
+                <param name = "Save to flash"
+             group ="Administration/Info"
+             description = 
+             "Saves current camera configuration (all 
+parameter values) in the non-volatile memory."
+             type = "Button"
+             netHelper = "params=save"
+             ui = "true"/>
+
+                <param name = "Camera type" 
+             group ="Administration/Info"
+             type = "Value"
+             description = "The manufacturer abbreviation" 
+             readonly ="true"
+             netHelper = "make"
+             ui = "true"/>
+
+                <param name = "Model"
+             group ="Administration/Info"
+             description = "Model of the camera."
+             type = "Value"
+             readonly ="true"
+             netHelper = "model"/>
+
+                <param name = "ModelFull"
+             group ="Administration/Info"
+             description = "Model of the camera."
+             type = "Value"
+             readonly ="true"
+             netHelper = "model=fullname"/>
+
+                <param name = "ModelRelease"
+             group ="Administration/Info"
+             description = "Model of the camera."
+             type = "Value"
+             readonly ="true"
+             netHelper = "model=releasename"/>
+
+
+
+                <param name = "Firmware version"
+             group ="Administration/Info"
+             description = "Firmware version of the camera."
+             type = "Value"
+             readonly ="true"
+             netHelper = "fwversion"
+             ui = "true"/>
+
+                <param name = "Image engine"
+             group ="Administration/Info"
+             description = "Version of the image processor."
+             type = "Value"
+             readonly ="true"
+             netHelper = "procversion"
+             ui = "true"/>
+
+                <param name = "Net version"
+             group ="Administration/Info"
+             description = "Version of the network processor."
+             type = "Value"
+             readonly ="true"
+             netHelper = "netversion"
+             ui = "true"/>
+
+                <param name = "Quality"
+             group = "Image quality"
+             subGroup="Quality"
+             type = "MinMaxStep"
+             min = "1"
+             max = "21"
+             step = "1"
+             default_value = "17"
+             ui = "true"/>
+
+
+                <param name = "Brightness"
+             group = "Image quality"
+             subGroup="Adjustment"
+             description = "Image brightness (valid values are from -50 to 50)."
+             type = "MinMaxStep"
+             min = "-50"
+             max = "50"
+             step = "1"
+             default_value = "5"
+             netHelper = "brightness"
+             ui = "true"/>
+
+                <param name = "Sharpness"
+             group = "Image quality"
+             subGroup="Adjustment"
+             description = 
+             "Adjusts image sharpness or 
+the crispness of an image."
+             type = "MinMaxStep"
+             min = "0"
+             max = "4"
+             step = "1"
+             default_value = "2"
+             netHelper = "sharpness"
+             ui = "true"/>
+
+                <param name = "Saturation"
+             group = "Image quality"
+             subGroup="Adjustment"
+             description = 
+             "Adjusts image color saturation or the amount of color in 
+an image. Lower saturation gives a duller, faded image."
+             type = "MinMaxStep"
+             min = "0"
+             max = "6"
+             step = "1"
+             default_value = "5"
+             netHelper = "saturation"
+             ui = "true"/>
+
+                <param name = "Blue"
+             group = "Image quality"
+             subGroup="Color"
+             description = 
+             "Adjusts the red/blue tint. This setting changes 
+the target for camera’s automatic white balance 
+computation. The effect is gradual and takes 20-30 
+seconds for the camera to fully adjust to the new setting."
+             type = "MinMaxStep"
+             min = "-10"
+             max = "10"
+             step = "1"
+             default_value = "0"
+             netHelper = "blue"
+             ui = "true"/>
+
+                <param name = "Red"
+             group = "Image quality"
+             subGroup="Color"
+             description = 
+             "Adjusts the red/blue tint. This setting changes the 
+target for camera’s automatic white balance computation. 
+The effect is gradual and takes 20-30 seconds 
+for the camera to fully adjust to the new setting."
+             type = "MinMaxStep"
+             min = "-10"
+             max = "10"
+             step = "1"
+             default_value = "0"
+             netHelper = "red"
+             ui = "true"/>
+
+                <param name = "Rotate 180"
+             group = "Image quality"
+             description = "Rotate 180 is an option for flipping the image 
+vertically and horizontally to rotate it 180 degrees."
+             type = "OnOff"
+             values ="180, 0"
+             default_value = "0"
+             netHelper = "rotate"
+             ui = "true"/>
+
+
+                <param name = "Illumination"
+             group = "Exposure"
+             description = 
+             "Adjusts the camera’s white balance computation 
+based on the scene’s illumination. “Automatic” enables 
+the camera to adjust for illumination automatically 
+while indoor/outdoor settings use presets assuming 
+the camera is indoors or outdoors."
+             type = "Enumeration"
+             values ="auto, indoor, outdoor, mix"
+             uiValues ="Auto, Indoor, Outdoor, Mix"
+             default_value = "auto"
+             netHelper = "illum"
+             ui = "true"/>
+
+                <param name = "Lighting"
+             group = "Exposure"
+             description = 
+             "Lighting prevents flicker caused by the 
+oscillation frequency of indoor 
+lighting: European (50 Hz) or US/Japan (60 Hz)."
+             type = "Enumeration"
+             values ="50, 60"
+             uiValues ="50Hz, 60Hz"
+             default_value = "60"
+             netHelper = "freq"
+             ui = "true"/>
+
+                <param name = "Light Mode"
+             group = "Exposure"
+             subGroup="Low Light Mode"
+             description = 
+             "Low Light Mode adjusts performance under different light conditions.
+Exposure time refers to the amount of time the sensor is exposed to light.
+Short exposures result in less light, giving darker images whereas longer
+exposures can flood an image with light, giving washed out images in the
+presence of a lot of light. Additionally, motion blur is reduced under short
+exposures and increased under long exposures.
+                    
+High Speed enables a fixed exposure time, selectable from the
+“Short Exposure” menu with values between 1 and 80ms. Low values will
+reduce motion blur but may result in a noisier video. Ample illumination is
+required to improve quality under very short exposures due to the lack of
+captured light.
+                    
+Speed enables short exposures ranging from 10-80ms. The
+exposure time will increase with low light conditions.
+                    
+Balanced enables medium exposures ranging from 20-80ms with
+low light conditions resulting in a higher exposure time.
+                    
+Quality enables longer exposures ranging from 40-200ms. Motion
+blur may increase, but video will contain less noise under low light
+conditions. Moon Light enables exposures of up to 500 ms if necessary. This
+mode will result in more motion blur for fast moving objects."
+             type = "Enumeration"
+             values ="highspeed, speed, balance, quality, moonlight"
+             uiValues ="HighSpeed, Speed, Balance, Quality, Moonlight"
+             default_value = "balance"
+             netHelper = "lowlight"
+             ui = "true"/>
+
+                <param name = "Short Exposure"
+             group = "Exposure"
+             subGroup="Low Light Mode"
+             description = 
+             "High Speed enables a fixed exposure time, 
+selectable from the “Short Exposure” menu 
+with values between 1 and 80ms. Low values 
+will reduce motion blur but may result in 
+a noisier video. Ample illumination is 
+required to improve quality under very 
+short exposures due to the lack of captured light."
+             type = "MinMaxStep"
+             min = "1"
+             max = "80"
+             step = "1"
+             default_value = "1"
+             netHelper = "shortexposures"
+             ui = "true"/>
+
+                <param name = "Auto exposure On/Off"
+             group = "Exposure"
+             subGroup="Low Light Mode"
+             description = 
+             "Auto exposure On/Off is an option to enable/disable 
+the on-camera automatic exposure control. 
+Auto exposure maintains the user-set image 
+brightness under changing lighting conditions. 
+This must be enabled to ensure the 
+‘Low Light Mode’ settings function."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "on"
+             netHelper = "autoexp"
+             ui = "true"/>
+
+                <param name = "Enable motion detection"
+             group = "Motion detection"
+             subGroup=""
+             description = "Enables on-camera motion detection."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "off"
+             netHelper = "motiondetect"
+             ui = "true"/>
+
+                <param name = "Zone size"
+             group = "Motion detection"
+             subGroup=""
+             type = "MinMaxStep"
+             min = "1"
+             max = "15"
+             step = "1"
+             default_value = "8"
+             netHelper = "mdzonesize"
+             ui = "true"/>
+
+                <param name = "TotalZones"
+              group = "Motion detection"
+              subGroup=""
+              type = "MinMaxStep"
+              min = "64"
+              max = "1024"
+              step = "1"
+              default_value = "64"
+              netHelper = "mdtotalzones"/>
+
+
+                <param name = "Threshold"
+             group = "Motion detection"
+             subGroup=""
+             description = 
+             "Mmotion detection threshold that determines the 
+sensitivity to local inter-frame brightness 
+changes (valid values are 2…31). Lower settings 
+may cause false motion detection due to noise."
+             type = "MinMaxStep"
+             min = "2"
+             max = "31"
+             step = "1"
+             default_value = "4"
+             netHelper = "mdlevelthreshold"
+             ui = "true"/>
+
+                <param name = "Sensitivity"
+             group = "Motion detection"
+             subGroup=""
+             description = 
+             "This prevents false triggering due to a sudden 
+overall brightness change that triggers motion 
+detection in a large number of zones simultaneously. 
+If more than this number of zones have motion it is 
+assumed that the change is due to lighting 
+change and the detected motion is ignored."
+             type = "MinMaxStep"
+             min = "1"
+             max = "64"
+             step = "1"
+             default_value = "20"
+             netHelper = "mdsensitivity"
+             ui = "true"/>
+
+                <param name = "Md detail"
+             group = "Motion detection"
+             subGroup=""
+             description = 
+             "Allows controlling the size of detectable 
+moving objects. The value is the number 
+of 32x32 sub-zones within each zone that 
+should contain motion for the entire 
+zone to be considered to contain motion."
+             type = "MinMaxStep"
+             min = "1"
+             max = "15"
+             step = "1"
+             default_value = "1"
+             netHelper = "mddetail"
+             ui = "true"/>
+
+                <param name = "MdResult"
+               group = "Motion detection"
+               subGroup=""
+               type = "Value"
+               netHelper ="mdresult"/>
+
+                <param name = "streamFpsSharing"
+         type = "Value"
+         default_value = "shareFps"/>
+
+
+
+            </params>
+        </resource>
+
+
+        <resource name = "1300" public ="ArecontVision_Abstract"/>
+
+        <resource name = "2100" public ="ArecontVision_Abstract">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="1600"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1200"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="24"/>
+            </params>
+        </resource>
+
+
+
+
+        <resource name = "3100" public ="ArecontVision_Abstract">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="2048"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1536"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="15"/>
+            </params>
+        </resource>
+
+
+        <resource name = "5100" public ="ArecontVision_Abstract">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="2592"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1944"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="9"/>
+            </params>
+        </resource>
+
+        <resource name = "10005" public ="ArecontVision_Abstract, ArecontVision_H264, ArecontVision_DN">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="3648"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="2752"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="7"/>
+
+
+                <param name = "Binning in day mode"
+             group = "Binning"
+             description = "Binned mode will be used during day mode."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "off"
+             netHelper = "day_binning"
+             ui = "true"/>
+
+                <param name = "Binning in night mode"
+             group = "Binning"
+             description = "Binned mode will be used during night mode."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "on"
+             netHelper = "night_binning"
+             ui = "true"/>
+
+                <param name = "1080p mode"
+             group = "Binning"
+             description = "Binned mode with 1920x1080 maximum resolution."
+             type = "OnOff"
+             values ="on, off"
+             default_value = "off"
+             netHelper = "1080p_mode"
+             ui = "true"/>
+
+
+
+
+            </params>
+        </resource>
+
+
+        <resource name = "2805" public ="ArecontVision_Abstract, ArecontVision_H264">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="1920"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1088"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="30"/>
+
+
+
+            </params>
+        </resource>
+
+        <resource name = "3226" public ="ArecontVision_Abstract, ArecontVision_H264">
+            <params>
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="2048"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1536"/>
+
+                <param name = "MaxFPS"
+             type = "Value"
+             default_value ="21"/>
+
+
+
+            </params>
+        </resource>
+
+
+
+        <resource name = "1305" public ="1300, ArecontVision_H264"/>
+        <resource name = "2105" public ="2100, ArecontVision_H264"/>
+        <resource name = "3105" public ="3100, ArecontVision_H264"/>
+        <resource name = "5105" public ="5100, ArecontVision_H264"/>
+        <resource name = "3130" public ="3100, ArecontVision_DN"/>
+        <resource name = "3135" public ="3130, ArecontVision_H264"/>
+
+        <resource name = "Panoramic" public ="ArecontVision_Abstract">
+            <params>
+
+                <param name = "hasDualStreaming"
+           type = "Value"
+         default_value = "0"/>
+
+                <param name = "CnannelEnable"
+                   type = "MinMaxStep"
+                   min = "0"
+                   max = "15"
+                   step = "1"
+                   netHelper = "channelenable"
+                   default_value = "0"/>
+
+
+
+                <param name = "Equalize Brightness"
+             group = "Image quality"
+             type = "OnOff"
+             values ="on, off"
+             default_value = "on"
+             netHelper = "equalbright"
+             ui = "true"/>
+
+                <param name = "Equalize Color"
+             group = "Image quality"
+             type = "OnOff"
+             values ="on, off"
+             default_value = "on"
+             netHelper = "equalcolor"
+             ui = "true"/>
+
+
+
+                <param name = "MaxSensorWidth"
+             type = "Value"
+             default_value ="1600"/>
+
+                <param name = "MaxSensorHeight"
+             type = "Value"
+             default_value ="1200"/>
+
+
+                <param name = "image_left"
+             type = "MinMaxStep"
+             min = "0"
+             max = "1600"
+             step = "1"
+             default_value = "0"/>
+
+                <param name = "image_top"
+               type = "MinMaxStep"
+               min = "0"
+               max = "1200"
+               step = "1"
+               default_value = "0"/>
+
+                <param name = "image_right"
+               type = "MinMaxStep"
+               min = "64"
+               max = "1600"
+               step = "1"
+               default_value = "1600"/>
+
+                <param name = "image_bottom"
+               type = "MinMaxStep"
+               min = "64"
+               max = "1200"
+               step = "1"
+               default_value = "1200"/>
+
+                <param name = "resolution"
+           type = "Enumeration"
+           values ="full, half"
+           default_value = "half"/>
+
+                <param name = "Quality"
+                 type = "MinMaxStep"
+                 min = "1"
+                 max = "21"
+                 step = "1"
+                 default_value = "19"/>
+
+                <param name = "MaxFPS"
+               type = "Value"
+               default_value ="6"/>
+
+
+
+            </params>
+        </resource>
+
+        <resource name = "8360" public ="Panoramic">
+            <params>
+                <param name="VideoLayout"
+               type="Value"
+               default_value="width=4;height=1;sensors=0,3,2,1"/>
+            </params>
+        </resource>
+
+        <resource name = "8180" public ="Panoramic">
+            <params>
+                <param name="VideoLayout"
+               type="Value"
+               default_value="width=4;height=1;sensors=2,1,3,0"/>
+            </params>
+        </resource>
+
+        <resource name = "8365" public ="8360, ArecontVision_H264"/>
+        <resource name = "8185" public ="8180, ArecontVision_H264"/>
+
+
+        <!-- core is done and here is variations only -->
+
+        <!-- just in case -->
+        <resource name = "3130DN" public ="3130"/>
+        <resource name = "3135DN" public ="3135"/>
+
+
+        <resource name = "1300M" public ="1300"/>
+        <resource name = "2100M" public ="2100"/>
+        <resource name = "3100M" public ="3100"/>
+        <resource name = "5100M" public ="5100"/>
+        <resource name = "3130M" public ="3130"/>
+
+        <resource name = "1305M" public ="1305"/>
+        <resource name = "2105M" public ="2105"/>
+        <resource name = "3105M" public ="3105"/>
+        <resource name = "5105M" public ="5105"/>
+        <resource name = "10005M" public ="10005"/>
+        <resource name = "2805M" public ="2805"/>
+        <resource name = "3135M" public ="3135"/>
+
+
+        <!-- MD -->
+        <resource name = "1355" public ="1305"/>
+        <resource name = "2155" public ="2105"/>
+        <resource name = "3155" public ="3105"/>
+        <resource name = "5155" public ="5105"/>
+
+        <resource name = "1355M" public ="1355"/>
+        <resource name = "2155M" public ="2155"/>
+        <resource name = "3155M" public ="3155"/>
+        <resource name = "5155M" public ="5155"/>
+
+
+        <!-- compact -->
+        <resource name = "1315" public ="1305"/>
+        <resource name = "2115" public ="2105">
+            <params>
+
+                <param name = "MaxSensorWidth"
+                 type = "Value"
+                 default_value ="1920"/>
+
+                <param name = "MaxSensorHeight"
+                 type = "Value"
+                 default_value ="1088"/>
+
+                <param name = "MaxFPS"
+               type = "Value"
+               default_value ="32"/>
+            </params>
+        </resource>
+
+        <resource name = "2115v1" public ="2115"/>
+
+
+        <resource name = "3115" public ="3105">
+            <params>
+                <param name = "MaxFPS"
+               type = "Value"
+               default_value ="21"/>
+            </params>
+        </resource>
+
+        <resource name = "3115v1" public ="3115"/>
+
+
+        <resource name = "5115" public ="5105">
+            <params>
+                <param name = "MaxFPS"
+               type = "Value"
+               default_value ="14"/>
+            </params>
+        </resource>
+
+        <resource name = "5115v1" public ="5115"/>
+
+        <resource name = "2815" public ="2805"/>
+
+        <resource name = "1310" public ="1300"/>
+        <resource name = "2110" public ="2100"/>
+        <resource name = "3110" public ="3100"/>
+        <resource name = "5110" public ="5100"/>
+
+        <resource name = "1315M" public ="1305"/>
+        <resource name = "2115M" public ="2115"/>
+        <resource name = "3115M" public ="3115"/>
+        <resource name = "5115M" public ="5115"/>
+        <resource name = "2815M" public ="2805"/>
+
+        <resource name = "1310M" public ="1300"/>
+        <resource name = "2110M" public ="2100"/>
+        <resource name = "3110M" public ="3100"/>
+        <resource name = "5110M" public ="5100"/>
+        <resource name = "10115" public ="10005"/>
+
+
+
+        <!-- mega view -->
+        <resource name = "1325" public ="1305"/>
+        <resource name = "2125" public ="2115"/>
+        <resource name = "3125" public ="3115"/>
+        <resource name = "5125" public ="5115"/>
+        <resource name = "5125DNv1x" public ="5115"/>
+        <resource name = "2825" public ="2805"/>
+
+
+        <resource name = "2145" public ="2115"/>
+        <resource name = "2145DN" public ="2145, ArecontVision_DN"/>
+        <resource name = "3145" public ="3115"/>
+        <resource name = "3145DN" public ="3145, ArecontVision_DN"/>
+        <resource name = "5145" public ="5115"/>
+        <resource name = "5145DN" public ="5145, ArecontVision_DN"/>
+
+
+
+
+        <!-- DN -->
+        <resource name = "1300DN" public ="1300, ArecontVision_DN"/>
+        <resource name = "2100DN" public ="2100, ArecontVision_DN"/>
+        <resource name = "3100DN" public ="3100, ArecontVision_DN"/>
+        <resource name = "5100DN" public ="5100, ArecontVision_DN"/>
+        <resource name = "8180DN" public ="8180, ArecontVision_DN"/>
+        <resource name = "8360DN" public ="8360, ArecontVision_DN"/>
+
+
+        <resource name = "1305DN" public ="1305, ArecontVision_DN"/>
+        <resource name = "2105DN" public ="2105, ArecontVision_DN"/>
+        <resource name = "3105DN" public ="3105, ArecontVision_DN"/>
+        <resource name = "5105DN" public ="5105, ArecontVision_DN"/>
+        <resource name = "2805DN" public ="2805, ArecontVision_DN"/>
+        <resource name = "10005DN" public ="10005, ArecontVision_DN"/>
+        <resource name = "8185DN" public ="8185, ArecontVision_DN"/>
+        <resource name = "8365DN" public ="8365, ArecontVision_DN"/>
+        <resource name = "8185CO" public ="8185"/>
+        <resource name = "8365CO" public ="8365"/>
+
+
+        <resource name = "20185" public ="8185">
+            <params>
+                <param name = "MaxSensorWidth"
+                   type = "Value"
+                   default_value ="2592"/>
+
+                <param name = "MaxSensorHeight"
+                   type = "Value"
+                   default_value ="1944"/>
+
+                <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="4"/>
+            </params>
+        </resource>
+
+
+
+        <resource name = "20185DN" public ="20185, ArecontVision_DN"/>
+
+
+
+        <resource name = "20365" public ="8185">
+            <params>
+                <param name = "MaxSensorWidth"
+                   type = "Value"
+                   default_value ="2592"/>
+
+                <param name = "MaxSensorHeight"
+                   type = "Value"
+                   default_value ="1944"/>
+
+                <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="4"/>
+            </params>
+        </resource>
+
+
+
+
+        <resource name = "20365DN" public ="20365, ArecontVision_DN"/>
+
+        <resource name = "20185CO" public ="20185"/>
+        <resource name = "20365CO" public ="20365"/>
+
+
+        <resource name = "12186" public ="8185">
+            <params>
+                <param name = "MaxSensorWidth"
+                   type = "Value"
+                   default_value ="2048"/>
+
+                <param name = "MaxSensorHeight"
+                   type = "Value"
+                   default_value ="1536"/>
+
+                <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="6"/>
+            </params>
+        </resource>
+
+        <resource name = "12366" public ="8185">
+            <params>
+                <param name = "MaxSensorWidth"
+                   type = "Value"
+                   default_value ="2048"/>
+
+                <param name = "MaxSensorHeight"
+                   type = "Value"
+                   default_value ="1536"/>
+
+                <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="5"/>
+            </params>
+        </resource>
+
+        <resource name = "12186DN" public ="12186, ArecontVision_DN"/>
+
+        <resource name = "12366DN" public ="12366, ArecontVision_DN"/>
+
+
+        <resource name = "40185" public ="8185">
+            <params>
+                <param name = "MaxSensorWidth"
+                   type = "Value"
+                   default_value ="3648"/>
+
+                <param name = "MaxSensorHeight"
+                   type = "Value"
+                   default_value ="2752"/>
+
+                <param name = "MaxFPS"
+                   type = "Value"
+                   default_value ="2"/>
+            </params>
+        </resource>
+
+
+        <resource name = "40185DN" public ="40185"/>
+
+
+        <!-- MD  DN-->
+        <resource name = "1355DN" public ="1305DN"/>
+        <resource name = "2155DN" public ="2105DN"/>
+        <resource name = "3155DN" public ="3105DN"/>
+        <resource name = "5155DN" public ="5105DN"/>
+
+        <resource name = "1355AI" public ="1305AI"/>
+        <resource name = "2155AI" public ="2105AI"/>
+        <resource name = "3155AI" public ="3105AI"/>
+        <resource name = "5155AI" public ="5105AI"/>
+
+
+        <!-- compact DN-->
+        <resource name = "1315DN" public ="1305DN"/>
+        <resource name = "2115DN" public ="2115, ArecontVision_DN"/>
+        <resource name = "2115DNv1" public ="2115DN"/>
+        <resource name = "3115DN" public ="3115, ArecontVision_DN"/>
+        <resource name = "3115DNv1" public ="3115DN"/>
+        <resource name = "5115DN" public ="5115, ArecontVision_DN"/>
+        <resource name = "5115DNv1" public ="5115DN"/>
+        <resource name = "5115DNv2" public ="5115DNv1"/>
+
+        <resource name = "1310DN" public ="1300DN"/>
+        <resource name = "2110DN" public ="2100DN"/>
+        <resource name = "3110DN" public ="3100DN"/>
+        <resource name = "5110DN" public ="5100DN"/>
+        <resource name = "2815DN" public ="2805DN"/>
+        <resource name = "10015" public ="10005"/>
+        <resource name = "10115" public ="10015"/>
+        <resource name = "10115v1" public ="10115"/>
+        <resource name = "10015DN" public ="10005DN"/>
+        <resource name = "10115DN" public ="10015DN"/>
+        <resource name = "10115DNv1" public ="10115DN"/>
+        <resource name = "10115AI" public ="10115, ArecontVision_AI"/>
+        <resource name = "10115AIv1" public ="10115AI"/>
+
+
+        <resource name = "10255" public ="10115"/>
+        <resource name = "10255DN" public ="10255, ArecontVision_DN"/>
+        <resource name = "10255AM" public ="10255DN"/>
+        <resource name = "10255AMIR" public ="10255DN"/>
+        <resource name = "10255AMIR-H" public ="10255AMIR"/>
+        <resource name = "10255AMIR-A" public ="10255AMIR"/>
+        <resource name = "10255AMIR-AH" public ="10255AMIR"/>
+
+
+        <!-- mega view DN-->
+        <resource name = "1325DN" public ="1305, ArecontVision_DN"/>
+        <resource name = "2125DN" public ="2125, ArecontVision_DN"/>
+        <resource name = "2125DNv1" public ="2125DN"/>
+        <resource name = "3125DN" public ="3125, ArecontVision_DN"/>
+        <resource name = "3125DNv1" public ="3125DN"/>
+        <resource name = "5125DN" public ="5125, ArecontVision_DN"/>
+        <resource name = "5125DNv1" public ="5125DN"/>
+        <resource name = "2825DN" public ="2815, ArecontVision_DN"/>
+        <resource name = "2125IR" public ="2125, ArecontVision_DN"/>
+        <resource name = "2125IRv1" public ="2125IR"/>  
+        <resource name = "2825IR" public ="2825, ArecontVision_DN"/>
+
+
+
+        <!-- AI -->
+        <resource name = "1300AI" public ="1300, ArecontVision_AI"/>
+        <resource name = "2100AI" public ="2100, ArecontVision_AI"/>
+        <resource name = "3100AI" public ="3100, ArecontVision_AI"/>
+        <resource name = "5100AI" public ="5100, ArecontVision_AI"/>
+        <resource name = "8180AI" public ="8180, ArecontVision_AI"/>
+        <resource name = "8360AI" public ="8360, ArecontVision_AI"/>
+
+
+        <resource name = "1305AI" public ="1305, ArecontVision_AI"/>
+        <resource name = "2105AI" public ="2105, ArecontVision_AI"/>
+        <resource name = "3105AI" public ="3105, ArecontVision_AI"/>
+        <resource name = "5105AI" public ="5105, ArecontVision_AI"/>
+        <resource name = "2805AI" public ="2805, ArecontVision_AI"/>
+        <resource name = "8185AI" public ="8185, ArecontVision_AI"/>
+        <resource name = "8365AI" public ="8365, ArecontVision_AI"/>
+
+
+        <!-- compact AI-->
+        <resource name = "1315AI" public ="1305AI"/>
+        <resource name = "2115AI" public ="2115, ArecontVision_AI"/>
+        <resource name = "2115AIv1" public ="2115AI"/>
+        <resource name = "3115AI" public ="3115, ArecontVision_AI"/>
+        <resource name = "3115AIv1" public ="3115AI"/>
+        <resource name = "5115AI" public ="5115, ArecontVision_AI"/>
+        <resource name = "5115AIv1" public ="5115AI"/>
+
+        <resource name = "1310AI" public ="1300AI"/>
+        <resource name = "2110AI" public ="2100AI"/>
+        <resource name = "3110AI" public ="3100AI"/>
+        <resource name = "5110AI" public ="5100AI"/>
+
+
+
+        <!-- mega view AI-->
+        <resource name = "1325IR" public ="1315, ArecontVision_DN"/>
+        <resource name = "2125IR" public ="2115, ArecontVision_DN"/>
+        <resource name = "3125IR" public ="3115, ArecontVision_DN"/>
+        <resource name = "3125IRv1" public ="3125IR"/>
+        <resource name = "5125IR" public ="5115, ArecontVision_DN"/>
+        <resource name = "5125IRv1" public ="5125IR"/>
+
+        <resource name = "1125" public ="1305">
+            <params>
+                <param name = "MaxFPS"
+                 type = "Value"
+                 default_value ="42"/>
+            </params>
+        </resource>
+
+        <resource name = "1125DN" public ="1125, ArecontVision_DN"/>
+
+        <resource name = "1125DNv1" public ="1125DN"/>
+        <resource name = "1125IR" public ="1125DN"/>
+        <resource name = "1125IRv1" public ="1125IR"/>
+        <resource name = "1125AI" public ="1125, ArecontVision_AI"/>
+
+        <resource name = "1115" public ="1125"/>
+        <resource name = "1115v1" public ="1115"/>
+
+
+        <resource name = "1115AI" public ="1115, ArecontVision_AI"/>
+        <resource name = "1115AIv1" public ="1115AI"/>
+        <resource name = "1115DN" public ="1115, ArecontVision_DN"/>
+        <resource name = "1115DNv1" public ="1115DN"/>
+        <resource name = "1145" public ="1115"/>
+        <resource name = "1145DN" public ="1145, ArecontVision_DN"/>
+
+        <resource name = "1255" public ="1115"/>
+        <resource name = "1255AM" public ="1255"/>
+        <resource name = "1255AM-H" public ="1255AM"/>
+        <resource name = "1255AMIR" public ="1255AM"/>
+        <resource name = "1255AMIR-H" public ="1255AMIR"/>
+        <resource name = "1255AMIR-A" public ="1255AMIR"/>
+        <resource name = "1255AMIR-AH" public ="1255AMIR"/>
+        <resource name = "1255AI" public ="1255, ArecontVision_AI"/>
+        <resource name = "1255DN" public ="1255, ArecontVision_DN"/>
+
+        <resource name = "2255" public ="2115"/>
+        <resource name = "2255AM" public ="2255"/>
+        <resource name = "2255PM" public ="2255"/>
+        <resource name = "2255AMIR" public ="2255AM"/>
+        <resource name = "2255AMIR-A" public ="2255AMIR"/>
+        <resource name = "2255AMIR-H" public ="2255AMIR"/>
+        <resource name = "2255AMIR-AH" public ="2255AMIR"/>
+        <resource name = "2255AI" public ="2255, ArecontVision_AI"/>
+        <resource name = "2255DN" public ="2255, ArecontVision_DN"/>
+
+        <resource name = "2256" public ="2255">
+            <params>
+                
+                <param name = "MaxFPS"
+                 type = "Value"
+                 default_value ="30"/>
+                
+            </params>
+         </resource>
+
+
+
+
+
+
+
+
+
+
+
+            <resource name = "3255" public ="3115"/>
+        <resource name = "3255AM" public ="3255"/>
+        <resource name = "3255PM" public ="3255"/>
+        <resource name = "3255AMIR" public ="3255AM"/>
+        <resource name = "3255AMIR-H" public ="3255AMIR"/>
+        <resource name = "3255AMIR-A" public ="3255AMIR"/>
+        <resource name = "3255AMIR-AH" public ="3255AMIR"/>
+        <resource name = "3255MIR" public ="3255AMIR"/>
+        <resource name = "3255AI" public ="3255, ArecontVision_AI"/>
+        <resource name = "3255DN" public ="3255, ArecontVision_DN"/>
+        <resource name = "3256" public ="3255"/>
+        <resource name = "3256PM" public ="3256, ArecontVision_DN"/>
+
+        <resource name = "5255" public ="5115"/>
+        <resource name = "5255AM" public ="5255"/>
+        <resource name = "5255PM" public ="5255"/>
+        <resource name = "5255AMIR" public ="5255AM"/>
+        <resource name = "5255AMIR-A" public ="5255AMIR"/>
+        <resource name = "5255AMIR-H" public ="5255AMIR"/>
+        <resource name = "5255AMIR-AH" public ="5255AMIR"/>
+        <resource name = "5255AI" public ="5255, ArecontVision_AI"/>
+        <resource name = "5255DN" public ="5255, ArecontVision_DN"/>
+
+
+        <resource name = "2116" public ="2115"/>
+        <resource name = "3116" public ="3115"/>
+        <resource name = "5116" public ="5115"/>
+
+        <resource name = "2116DN" public ="2116, ArecontVision_DN"/>
+        <resource name = "3116DN" public ="3116, ArecontVision_DN"/>
+        <resource name = "5116DN" public ="5116, ArecontVision_DN"/>
+
+        <resource name = "2116DNv1" public ="2116DN"/>
+        <resource name = "3116DNv1" public ="3116DN"/>
+        <resource name = "5116DNv1" public ="5116DN"/>
+
+        <resource name = "2116AI" public ="2116, ArecontVision_AI"/>
+        <resource name = "3116AI" public ="3116, ArecontVision_AI"/>
+        <resource name = "5116AI" public ="5116, ArecontVision_AI"/>
+
+
+        <resource name = "2116AIv1" public ="2116AI"/>
+        <resource name = "3116AIv1" public ="3116AI"/>
+        <resource name = "5116AIv1" public ="5116AI"/>
+
+
+        <resource name = "1146" public ="1115"/>
+        <resource name = "2146" public ="2116"/>
+        <resource name = "3146" public ="3116"/>
+        <resource name = "5146" public ="5116"/>
+
+        <resource name = "1146DN" public ="1146, ArecontVision_DN"/>
+        <resource name = "2146DN" public ="2146, ArecontVision_DN"/>
+        <resource name = "3146DN" public ="3146, ArecontVision_DN"/>
+        <resource name = "5146DN" public ="5146, ArecontVision_DN"/>
+
+        <resource name = "1146AI" public ="1146, ArecontVision_AI"/>
+        <resource name = "2146AI" public ="2146, ArecontVision_AI"/>
+        <resource name = "3146AI" public ="3146, ArecontVision_AI"/>
+        <resource name = "5146AI" public ="5146, ArecontVision_AI"/>
+
+        <resource name = "1146DNv1" public ="1146DN"/>
+        <resource name = "2146DNv1" public ="2146DN"/>
+        <resource name = "3146DNv1" public ="3146DN"/>
+        <resource name = "5146DNv1" public ="5146DN"/>
+
+        <resource name = "1146AIv1" public ="1146AI"/>
+        <resource name = "2146AIv1" public ="2146AI"/>
+        <resource name = "3146AIv1" public ="3146AI"/>
+        <resource name = "5146AIv1" public ="5146AI"/>
+
+        <resource name = "1455" public ="1255DN"/>
+        <resource name = "2455" public ="2255DN"/>
+        <resource name = "2456" public ="2255DN"/>
+        <resource name = "AV2456" public ="2456"/>        
+        <resource name = "3455" public ="3255DN"/>
+        <resource name = "3456" public ="3255DN"/>
+        <resource name = "5455" public ="5255DN"/>
+
+        <resource name = "1455DN" public ="1255DN"/>
+        <resource name = "2455DN" public ="2255DN"/>
+        <resource name = "2456DN" public ="2255DN"/>
+        <resource name = "AV2456DN" public ="2456DN"/>
+        <resource name = "3455DN" public ="3255DN"/>
+        <resource name = "3456DN" public ="3255DN"/>
+        <resource name = "5455DN" public ="5255DN"/>
+
+        <resource name = "1455DN-F" public ="1255DN"/>
+        <resource name = "2455DN-F" public ="2255DN"/>
+        <resource name = "2456DN-F" public ="2255DN"/>
+        <resource name = "AV2456DN-F" public ="2456DN"/>
+        <resource name = "3455DN-F" public ="3255DN"/>
+        <resource name = "3456DN-F" public ="3255DN"/>
+        <resource name = "5455DN-F" public ="5255DN"/>
+
+
+        <resource name = "D4F-AV1115v1-3312" public ="1115v1"/>
+        <resource name = "D4S-AV1115v1-3312" public ="1115v1"/>
+        <resource name = "D4SO-AV1115v1-3312" public ="1115v1"/>
+        <resource name = "D4F-AV2115v1-3312" public ="2115v1"/>
+        <resource name = "D4S-AV2115v1-3312" public ="2115v1"/>
+        <resource name = "D4SO-AV2115v1-3312" public ="2115v1"/>
+        <resource name = "D4F-AV3115v1-3312" public ="3115v1"/>
+        <resource name = "D4S-AV3115v1-3312" public ="3115v1"/>
+        <resource name = "D4SO-AV3115v1-3312" public ="3115v1"/>
+        <resource name = "D4F-AV5115v1-3312" public ="5115v1"/>
+        <resource name = "D4S-AV5115v1-3312" public ="5115v1"/>
+        <resource name = "D4SO-AV5115v1-3312" public ="5115v1"/>
+
+        <resource name = "1115v1-3312" public ="1115v1"/>
+        <resource name = "1115v1-3312" public ="1115v1"/>
+        <resource name = "1115v1-3312" public ="1115v1"/>
+        <resource name = "2115v1-3312" public ="2115v1"/>
+        <resource name = "2115v1-3312" public ="2115v1"/>
+        <resource name = "2115v1-3312" public ="2115v1"/>
+        <resource name = "3115v1-3312" public ="3115v1"/>
+        <resource name = "3115v1-3312" public ="3115v1"/>
+        <resource name = "3115v1-3312" public ="3115v1"/>
+        <resource name = "5115v1-3312" public ="5115v1"/>
+        <resource name = "5115v1-3312" public ="5115v1"/>
+        <resource name = "5115v1-3312" public ="5115v1"/>
+
+        <resource name = "2225" public ="2115"/>
+        <resource name = "2226" public ="2225"/>
+        <resource name = "3225" public ="3115"/>
+        <resource name = "2226" public ="3225"/>
+        <resource name = "5225" public ="5115"/>
+        <resource name = "10225" public ="10115"/>
+
+
+        <resource name = "2245" public ="2115"/>
+        <resource name = "2246" public ="2245"/>
+        <resource name = "3245" public ="3115"/>
+        <resource name = "3246" public ="3245"/>
+        <resource name = "5245" public ="5115"/>
+        <resource name = "3226pmir" public ="3226"/>
+        
+        
+
+
+    </oem>
+
+</resources>
